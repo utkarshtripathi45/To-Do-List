@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TaskFlow • Animated Todo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section class="hero-panel">
+      <div class="hero-copy">
+        <p class="eyebrow">Smart task management</p>
+        <span class="hero-badge">Fast. Clean. Focused.</span>
+        <h1>TaskFlow</h1>
+        <p class="hero-text">A beautiful animated todo list designed for clarity, speed, and a polished daily workflow.</p>
+      </div>
+      <div class="board-card">
+        <div class="task-input-wrap">
+          <input id="taskInput" type="text" placeholder="Add a new task" autocomplete="off" />
+          <button id="addTaskBtn" aria-label="Add task">Add</button>
+        </div>
+
+        <div class="status-row">
+          <span id="taskCount">0 tasks</span>
+          <div class="filters">
+            <button data-filter="all" class="filter-btn active">All</button>
+            <button data-filter="active" class="filter-btn">Active</button>
+            <button data-filter="completed" class="filter-btn">Done</button>
+          </div>
+        </div>
+
+        <ul id="taskList" class="task-list" aria-live="polite"></ul>
+
+        <div class="footer-bar">
+          <span id="remainingCount">0 remaining</span>
+          <button id="clearCompleted" class="ghost-btn">Clear completed</button>
+        </div>
+      </div>
+      <p  style="color: rgb(255, 230, 230); font-size: 16px; display: flex;">Developed By: Utkarsh Tripathi</p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
